@@ -13,13 +13,12 @@
 }
 
 .topBar {
-    background-color: green;
+    background-color: lightgrey;
     grid-column: 2 / span 4;
     grid-row: 1;
 }
 
 .content {
-    background-color: palegoldenrod;
     grid-column: 2 / span 4;
     grid-row: 2 / span 4;
 }
@@ -31,9 +30,12 @@
     flex-direction: column;
     font-size: 30px;
     gap: 40px;
-
     margin-top: 20px;
     margin-left: 50px;
+}
+
+.sideContent .select:hover {
+    scale: 1.01;
 }
 
 .action {
@@ -76,18 +78,20 @@
     gap: 40px;
     margin-top: 30px;
 }
-.info div{
-    background-color: gray;
+.info button{
+    background: darkgrey;
     border-radius: 30px;
-    width: 50px;
-    height: 20px;
-    padding: 10px;
-    padding-top: 14px;
+    width: 80px;
+    height: 35px;
+    border: 0;
     text-align: center
 }
-.info div:hover {
-    background-color: black;
-    color:white;
+.info button:hover {
+    opacity: 0.9;
+    scale: 1.02;
+}
+.info button:active {
+    background: grey;
 }
 
 .greet , .profile {
@@ -98,6 +102,11 @@
 
 .greet {
     margin-left: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.greeting {
+    margin-top: 20pxgit ;
 }
 
 .top input{
