@@ -2,7 +2,6 @@
 .bars {
     height: 100vh;
     display: grid;
-    row-gap: 6px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
 }
@@ -120,3 +119,26 @@ textarea:focus, input:focus{
     outline: none;
 }
 
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 10px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 60%;
+    border: 1px solid black;
+    border-left: 10px solid black;
+    border-radius: 10px;
+    padding: 5%;
+    padding-bottom: 0;
+}
+
+.card .icons {
+    margin-left: auto;
+}
